@@ -1,0 +1,557 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 16px;
+}
+.center_background{
+    background: black url("../img/background.jpg") no-repeat 50% 0;
+    background-size: 100%;
+ /*   margin: 0 auto;*/
+}
+ .layout_center_wrapper{
+     max-width: 90%;
+     margin: 0 auto;
+     padding: 1px 10px;
+ }
+.layout_center_wrapper:after{
+    display: table;
+    content: "";
+    clear: both;
+}
+
+ .header,
+ .footer{
+     background-color: black;
+     color: white;
+ }
+ .header a:link,
+ .header a:visited,
+ .header a:hover,
+ .header a:active{
+     color: #fff;
+ }
+ .main_menu{
+     list-style: none;
+     width: 75%;
+     float: left;
+     padding: 0;
+     margin: 0;
+ }
+ .main_menu li{
+     display: inline-block;
+     margin-right: -0.2em;
+
+ }
+ .main_menu a{
+     display: block;
+     text-decoration: none;
+     padding: 30px 20px;
+     text-transform: uppercase;
+ }
+ .main_menu a:hover{
+     background-color: #242424;
+     border-bottom: 5px solid #fff;
+     padding-bottom: 24px;
+ }
+ .main_menu .active a{
+     /*box-shadow: 0 25px 0 -20px #fff;*/
+     border-bottom: 5px solid #fff;
+     padding-bottom: 24px;
+ }
+ .main_menu .active a:hover{
+     background: #000;
+ }
+
+ .account_menu{
+     max-width: 23%;
+     float: right;
+     /*max-width: 140px;*/
+     /*border: 2px solid #f1f1f1;*/
+ }
+ .account_menu_enter{
+     position: relative;
+     text-transform: uppercase;
+     text-decoration: none;
+     display: block;
+     padding: 30px 0;
+     padding-left: 35px;
+
+ }
+ .account_menu_enter:hover{
+     background-color: #242424;
+ }
+.account_menu_enter:before{
+     content:"";
+     position: absolute;
+     width: 16px;
+     height: 16px;
+     background: url("../img/enter_user.gif")  no-repeat 0 0;
+     top: 33px;
+     left: 0;
+ }
+.account_menu_enter_disabled:before{
+    opacity: 0.3;
+}
+ .logo{
+     width: 365px;
+     min-height: 50px;
+     margin: 50px auto;
+     margin-bottom: 0;
+     text-align: center;
+ }
+ .logo-block a{
+    display: block;
+ }
+ .features{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #fff;
+    padding: 0px 4%;
+    padding-bottom: 1em;
+    margin-bottom: 5em;
+ }
+ .features li{
+     float: left;
+     width: 30%;
+     min-height: 50px;
+     margin-right: 4%;
+     text-align: center;
+ }
+ .features li:last-child{
+     margin-right: 0;
+ }
+ .features:after{
+     content: "";
+     display: table;
+     clear: both;
+ }
+ .feature_title{
+    padding: 0;
+     position: relative;
+     font-size: 1.5em;
+     line-height: 1.6em;
+     text-transform: uppercase;
+     font-weight: bold;
+     margin-bottom: 80px;
+ }
+ .feature_title:after{
+     position: absolute;
+     content: "";
+     width: 30px;
+     height: 30px;
+     background: url("../img/romb.gif") no-repeat;
+     bottom: -50px;
+     left: 50%;
+     margin-left: -15px;
+ }
+ .features p{
+     margin: 0 10px;
+     font-size: 0.8em;
+     text-transform: uppercase;
+     line-height: 1.7em;
+     letter-spacing: 1px;
+ }
+ .index_section{
+    position: relative;
+    margin: 0 auto;
+  /*  padding: 5% 7%;*/
+    min-height: 430px;
+    background: url(../img/backkground_light.jpg);
+    font-size: 0.9em;
+    line-height: 1.7em;
+    max-width: 940px;
+    margin-bottom: 50px;
+    padding: 50px 70px;
+
+ }
+ 
+
+ .index_section:after{
+     content: "";
+     display: table;
+     clear: both;
+ }
+.index_section:after{
+    right: 50%;
+    position: absolute;
+    content: "";
+    height: 235px;
+    width: 5px;
+    background: url(../img/creative_border.png) no-repeat;
+    margin-right: -2.5px;
+    top: 20%;
+}
+ .index_section h2{
+     font-size: 30px;
+     text-transform: uppercase;
+
+ }
+ i{
+     display: block;
+     margin-bottom: 20px;
+ }
+
+.index_left_column{
+    float: left;
+    max-width: 50%;
+    min-height: 100px;
+}
+.index_left_column ul{
+    margin:0;
+    padding:0;
+    margin-bottom: 20px;
+}
+.index_left_column li{
+    list-style: none;
+    font-size: 1em;
+    line-height: 1.7em;
+
+}
+.index_left_column table{
+    padding-bottom: 50px;
+}
+
+.index_right_column{
+    float: right;
+    max-width: 363px;
+    min-height: 100px;
+    display: inline-block;
+    /*text-align: right;*/
+}
+.index_right_column img{
+    width: 300px;
+    height: 169px;
+    border: 7px solid #fff;
+    margin-top: 10px;
+    margin-bottom: 90px;
+    float: left;
+}
+.index_right_column h2{
+    text-align: left;
+    font-size: 30px;
+}
+
+.index_right_column h3{
+    text-align: left;
+    font-size:30px;
+}
+.index_right_column p{
+    font-size: 1em;
+    line-height: 1.7em;
+    text-align: left;
+}
+.index_right_column input[type="text"],
+.index_right_column input[type="date"]{
+    width: 133px;
+    height: 27px;
+    border: 3px solid black;
+    padding: 5px 10px;
+    margin-right: 21px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+.index_right_column button[type="submit"]{
+    width: 339px;
+    height: 55px;
+    color: white;
+    background: black;
+    padding: 11px 30px;
+    font-weight: bold;
+    margin-top: 24px;
+    border: 0;
+}
+.index_right_column button[type="submit"]:hover{
+    background-color: white;
+    color: black;
+}
+
+.btn{
+    display: inline-block;
+    width: 140px;
+    background-color: black;
+    text-align: center;
+    margin-left: 30px;
+}
+.btn a{
+    display: block;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 15px 9px;
+
+}
+.btn a:hover{
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+}
+.news_btn{
+    margin-bottom: 30px;
+}
+.back_btn,
+.news_btn,
+.how_to_come_btn{
+    margin-left: 0;
+}
+ .login_popup{
+     display: none;
+     position: absolute;
+     top: 130px;
+     left: 50%;
+     width: 300px;
+     min-height: 200px;
+     padding: 50px 80px;
+     margin-left: -230px;
+     background: #fff;
+ }
+ .login_popup h2{
+     margin:0;
+ }
+ .login_popup p{
+     font-size: 14px;
+     line-height: 24px;
+     text-transform: uppercase;
+     font-weight: bold;
+     letter-spacing: 1px;
+ }
+ .login_form{
+     font-weight: bold;
+     font-size: 14px;
+     text-transform: uppercase;
+ }
+ .login_form input[type="text"],
+ .login_form input[type="data"],
+ .login_form input[type="name"],
+ .login_form input[type="password"],
+ .login_form input[type="submit"]{
+     display: block;
+     font-weight: bold;
+     font-size: 14px;
+     font-family: "PT Sans Marrow", sans-serif;
+     text-transform: uppercase;
+ }
+  .login_form input[type="data"],
+ .login_form input[type="name"],
+ .login_form input[type="password"],
+ .login_form input[type="text"]{
+     width: 241px;
+     padding: 12px 15px;
+     border: 2px solid black;
+     margin-bottom: 10px;
+     padding-right: 40px;
+     color: black;
+     background-color: #f9f6f3;
+ }
+ .login_form input[type="password"]{
+     margin-bottom: 15px;
+ }
+ .login_form .login_field{
+     background: url("../img/user.png")no-repeat 270px 14px;
+ }
+ .login_form .password_field{
+     background: url("../img/locked.png")no-repeat 270px 14px;
+ }
+ .login_form .restore{
+     float: right;
+     color: black;
+ }
+ .login_form input[type="submit"]{
+     width: 300px;
+     margin-top: 15px;
+     padding: 14px 0;
+     border: none;
+     color: white;
+     background-color: black;
+ }
+input[type="submit"]:hover{
+    background: white;
+    color: black;
+}
+.footer{
+    flex: 0 0 auto;
+    margin: 0;
+    padding: 20px 0;
+    height: 100px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: url(../img/background_footer.jpg) ;
+}
+.footer:after{
+    display: table;
+    clear: both;
+    content: "";
+}
+.col_footer{
+    float: left;
+    width: 28%;
+    text-align: center;
+}
+.lets_friend {
+    margin: 0 123px;
+}
+.lets_friend h3{
+    margin: 20px 0 10px 0;
+}
+.lets_friend p{
+    margin: 0;
+    padding: 0;
+}
+.lets_friend .button_footer{
+    display: inline-block;
+}
+.design_cite{
+    float: right;
+    width: 18%;
+    padding:0;
+    text-align: center;
+    margin-left: 7px;
+}
+
+.design_cite a{
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #000;
+    color: white;
+
+}
+.design_cite a:hover{
+    background-color: white;
+    color: black;
+
+}
+.footer_text{
+    text-align: left;
+}
+.footer .lets_friend img:hover{
+    background-color: white;
+    filter:drop-shadow(0 0 10px grey);
+}
+
+
+/*************************************************************/
+ /*MENU PRICE*/
+/******************************************************************/
+.inner_page{
+    margin: 0 auto;
+    background: url("../img/backkground_light.jpg");
+}
+.inner_page:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.page_title{
+    margin: 3.1em;
+    text-transform: uppercase;
+}
+.page_title h1{
+    margin: 0;
+    font-size: 1.875em;
+    line-height: 1.4em;
+}
+.inner_content{
+    font-size: 0.875em;
+    line-height: 1.7;
+    margin: 3.55em 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.inner_content h1,
+.inner_content h2{
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+.inner_content h1{
+    font-size: 2.15em;
+    line-height: 1.4em;
+
+}
+.inner_content h2{
+    font-size: 1.7em;
+    line-height: 1.25;
+}
+.inner-content p{
+    margin: 1em 0;
+}
+.mega_title{
+    margin-top: 4.55em;
+    margin-bottom: 4.5em;
+    text-align: center;
+}
+.mega_title h1{
+    position: relative;
+    display: block;
+    font-size: 3.4em;
+    line-height: 1;
+    padding: 0 25px;
+    margin: 0 auto;
+    z-index: 2;
+    background: url("../img/backkground_light.jpg") repeat-x;
+    width: 615px;
+    height: 35px;
+}
+.mega_title:after{
+    position: relative;
+    content: "";
+    display: block;
+    border-bottom: 2px solid black;
+    top: -1em;
+    z-index: 1;
+}
+.left_best{
+    float: left;
+    width: 48%;
+}
+.custom_list_1{
+    margin: 0;
+    padding:0;
+    list-style: none;
+    padding-bottom: 2em;
+}
+.custom_list_1 li{
+    padding-left: 20px;
+    margin-bottom: 1em;
+    background: url("../img/black_romb.png") no-repeat 0 50%;
+}
+.prices{
+    width: 450px;
+    border-collapse: collapse;
+    margin-bottom: 8.5em;
+}
+caption{
+    padding: 1.8em 0 1.1em;
+    font-size: 1.7em;
+    line-height: 1.25em;
+    float: left;
+}
+.prices th,
+.prices td{
+    width: 50%;
+    height: 35px;
+    padding: 0.5em 20px;
+    border: 2px solid black;
+}
+.prices th{
+    text-align: left;
+}
+.prices td{
+    text-align: center;
+}
+.right_content_prices{
+    float: right;
+    width: 42%;
+}
+
+.right_content_prices p{
+    clear: both;
+    padding-bottom: 2em;
+}
+
+
